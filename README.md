@@ -1,6 +1,6 @@
 #Encriptador/Desencriptador de Texto
 ##Descripción
-Este proyecyo es una herramienta para encriptar y desencriptar el mensaje utilizando un algoritmo de sustitución simple.
+Este proyecto es una herramienta para encriptar y desencriptar el mensaje utilizando un algoritmo de sustitución simple.
 
 #Características
 Se agregan los siguientes botones:
@@ -9,4 +9,4 @@ Se agregan los siguientes botones:
 -"Copiar": Selecciona y copia el texto transformado como si fuera la dunción "ctrl C"
 
 ##Uso
-Para poder encriptar o desencriptar un mensaje, este no debe contener caracteres especiales, mayúsculas o acentos. 
+Para poder encriptar o desencriptar un mensaje, este no debe contener caracteres especiales, mayúsculas o acentos, de lo contrario, no se podrá aplicar la función de "Encriptar" o "Desencriptar". 
