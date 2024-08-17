@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+:root{
+    --color-contenedor: white;
+    --color-fondo: #E5E5E5;
+    --color-texto1: #0A3871; 
+    --color-texto2: #343A40;
+    --color-texto3: #495057;
+    --color-btn-desencriptar: #D8DFE8;
+    --fuente: "Inter", sans-serif;
+}
+
+*{
+    background: var(--color-fondo);
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    line-height: 150%;
+    font-size: 32px; 
+    margin: 0%;
+    padding: 0%;   
+
+    
+    
+}
+
+body{
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    height: 100vh;
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    column-gap: 80px;
+    
+    
+    
+}
+
+.logo{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.text-area{
+    border: none;
+    color: var(--color-texto1);
+    text-transform: lowercase;
+    outline: none;
+    position: relative;
+    font-size: 1rem;
+}
+
+::placeholder {
+    color: var(--color-texto1);
+}
+
+
+.majesticons--covid-exclamation {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='%23000' fill-rule='evenodd' clip-rule='evenodd'%3E%3Cpath d='M9 2a1 1 0 0 1 1-1h4a1 1 0 1 1 0 2h-1v1.062c1.46.182 2.8.759 3.906 1.618l1.18-1.18l-.793-.793a1 1 0 0 1 1.414-1.414l3 3a1 1 0 0 1-1.414 1.414l-.793-.793l-1.345 1.346A9 9 0 0 0 7.26 18.155L5.914 19.5l.793.793a1 1 0 1 1-1.414 1.414l-3-3a1 1 0 1 1 1.414-1.414l.793.793l1.18-1.18A7.97 7.97 0 0 1 4.062 13H3v1a1 1 0 1 1-2 0v-4a1 1 0 0 1 2 0v1h1.062A7.96 7.96 0 0 1 5.68 7.094L4.5 5.914l-.793.793a1 1 0 0 1-1.414-1.414l3-3a1 1 0 0 1 1.414 1.414l-.793.793l1.18 1.18A7.96 7.96 0 0 1 11 4.062V3h-1a1 1 0 0 1-1-1'/%3E%3Cpath d='M16 9a7 7 0 1 0 0 14a7 7 0 0 0 0-14m-1 10a1 1 0 0 1 1-1h.001a1 1 0 1 1 0 2H16a1 1 0 0 1-1-1m2-6a1 1 0 1 0-2 0l.001 3a1 1 0 1 0 2 0z'/%3E%3C/g%3E%3C/svg%3E");
+    background-color: var(--color-texto1);
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+  }
+
+
+.seccion-texto{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.seccion-mensaje{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.mensaje {
+    border: none;
+    background-color: var(--color-contenedor);
+    border-radius: 24px;
+    color: var(--color-texto1);
+    margin-top: 20px;
+    text-align: center;
+    padding-top: 24px;
+    width: 400px;
+    height: 650px;
+    outline: none;
+    box-shadow: 10px 10px var(--color-texto1);
+    z-index: 1;
+    font-size: 1rem;
+}
+
+.imagen-muñeco{
+position: absolute;
+z-index: 2;
+background-color: transparent;
+bottom: 90%;
+}
+
+.mensaje-disclaimer > h3 {
+font-size: 0.75rem;
+text-align: center;
+font-weight: 800;
+background-color: transparent;
+
+}
+
+.mensaje-disclaimer > p {
+    font-size: 0.5rem;
+    text-align: center;
+    background-color: transparent;
+   
+}
+
+.mensaje-disclaimer{
+    width: 336px;
+    height: 122px;
+    bottom: 300px;
+    position: relative;
+    background-color: transparent;
+    z-index: 2;
+}
+
+
+
+.btn-encriptar{
+    border-radius: 24px;
+    background-color: var(--color-texto1);
+    color: var(--color-btn-desencriptar);
+    border-color: var(--color-texto1);
+}
+
+.btn-desencriptar{
+    border-radius: 24px;
+    background-color: var(--color-btn-desencriptar);
+    color: var(--color-texto1);
+    border-color: var(--color-texto1);
+     
+}
+
+.btn-encriptar, .btn-desencriptar, .copiar{
+    width: 328px;
+    height: 67px; 
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.copiar{
+    border-radius: 24px;
+    background-color: var(--color-texto1);
+    color: var(--color-btn-desencriptar);
+    border-color: var(--color-texto1);
+    position: relative;
+    bottom: 250px;
+    z-index: 2;
+}
+
+.btn-encriptar:hover, .btn-desencriptar:hover, .copiar:hover{
+    transform: scale(.95);
+    box-shadow: 5px 5px 5px 5px var(--color-texto3);
+}
+
+.btn-encriptar:active, .btn-desencriptar:active, .copiar:active{
+    color: black;
+    box-shadow: 5px 5px 5px 5px var(--color-texto2);
+    border-color: black;
+}
+
+.información{
+    color: var(--color-texto3);
+    font-size: 0.563rem;
+    background-color: transparent;
+    }
+
+
+footer{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 10vh;
+   width: 100vw;
+   background-color: var(--color-btn-desencriptar);
+   position: relative;
+   margin-bottom: auto;
+
+}
+
+footer > p {
+    background-color: transparent;
+    font-size: 20px;
+    color: var(--color-texto3);
+}
+
+
+@media screen and (min-width: 720px) and (max-width: 1180px){
+
+.logo{
+    margin-top: 70px;
+    margin-left: 40px;
+    position: absolute;
+}
+
+main{
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.seccion-mensaje{
+    margin-bottom: 0;
+    padding: 0;
+    width: 688px;
+    
+}
+
+.text-area {
+    margin-top: 166px;
+}
+
+.mensaje{
+    height: 300px;
+    width: 688px;
+    margin-top: 64px;
+    margin-bottom: 0;
+    background-image: none;
+    z-index: 1;
+}
+
+.mensaje-disclaimer{
+    margin-top: 85px;
+    margin-bottom: 0;
+    z-index: 2;
+}
+
+.imagen-muñeco{
+    visibility: hidden;
+}
+
+.copiar{
+    bottom: 100px;
+    z-index: 2;
+}
+
+}
+
+@media(max-width: 720px){
+   
+   main{
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    width: 100%;
+   
+   }   
+.logo{
+    margin-left: auto;
+}
+   .seccion-texto, .seccion-mensaje{
+    align-items: center;
+   }
+   
+    .text-area{
+        height: 400px;
+        width: 90vw;
+        margin-top: 30px;
+       }
+
+       .información{
+        margin-bottom: 20px;
+       }
+
+       .botones{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+       }
+
+    .mensaje{
+        height: 300px;
+        width: 90vw;
+        margin-top: 64px;
+        margin-bottom: 0;
+        background-image: none;
+        z-index: 1;
+    }
+    .mensaje-disclaimer{
+        z-index: 2;
+    }
+
+    .imagen-muñeco{
+        visibility: hidden;
+    }
+
+    .copiar{
+        margin-top: 50px;
+        z-index: 2;
+    }
+
+    footer > p {
+        text-align: center;
+    }
+}
+
+

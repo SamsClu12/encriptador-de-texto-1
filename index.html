@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header>
+        <img src="imgs/Logo.png" alt="Logo de Alura" class="logo">
+    </header>
+    <main class="main">
+        <section class="seccion-texto">
+            <textarea placeholder="Ingresa el texto aquí" cols="30" rows="10" class="text-area"></textarea>
+            <div>
+               <h6 class="información"><span class="majesticons--covid-exclamation"></span>Solo letras minúsculas, sin acentos, ni caracteres especiales.</h6>
+            </div>
+            <div class="botones">
+                <button onclick="btnEncriptar()" class="btn-encriptar" enabled >Encriptar</button>
+                <button onclick="btnDesencriptar()" class="btn-desencriptar" enabled >Desencriptar</button>
+            </div>
+        </section>
+       
+        <section class="seccion-mensaje">
+            <textarea id="mensaje" class="mensaje" cols="20" rows="10"></textarea>
+            <div class="mensaje-disclaimer">
+                <img src="./imgs/Muñeco.png" alt="Imagen Muñeco" class="imagen-muñeco">
+               <h3 class="mensaje-titulo">Ningún mensaje fue encontrado</h3>
+                <p class="mensaje-parrafo">Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <div class="boton-copiar">
+                <button id="copiar" class="copiar" onclick="copiar()">Copiar</button>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <p>Edgar Gutiérrez Mejía. Proyecto Alura (2024).</p>
+    </footer>
+    <script src="./app.js"></script>
+</body>
+</html>
